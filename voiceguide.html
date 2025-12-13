@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>VoiceGuide – Bicara, Kami Bantu</title>
+  <link rel="stylesheet" href="voiceguide.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="wrapper">
+  <h1 class="title">VoiceGuide</h1>
+  <p class="subtitle">Ceritakan masalahmu dengan suara, dan kami bantu temukan arah solusinya.</p>
+
+  <!-- MIC BUTTON -->
+  <div class="mic-box">
+    <button id="micBtn" class="mic-btn">Mulai Bicara</button>
+    <p id="statusText" class="status">Menunggu suara...</p>
+  </div>
+
+  <!-- SPEECH RESULT -->
+  <div id="speechResult" class="result-card hidden">
+    <h3>Hasil Transkripsi</h3>
+    <p id="userSpeech"></p>
+  </div>
+
+  <!-- ANALYSIS RESULT -->
+  <div id="analysisBox" class="analysis-card hidden">
+    <h3>Saran Untukmu</h3>
+    <p id="analysisText"></p>
+  </div>
+</div>
+
+<script src="voiceguide.js"></script>
+</body>
+</html>

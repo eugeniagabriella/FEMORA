@@ -1,0 +1,116 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", sans-serif;
+}
+
+body {
+  background: #ffffff;
+  padding-top: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 850px;
+  padding: 0 25px 80px;
+}
+
+/* TITLE */
+.title {
+  font-size: 54px;
+  font-weight: 800;
+  color: #c6296b;
+  text-align: center;
+  margin-bottom: 6px;
+  font-family: "Orelega One", serif;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 20px;
+  color: #5b2c3f;
+  margin-top: 20px;
+  margin-bottom: 45px;
+  font-family: "DM Serif Text", serif;
+}
+
+/* FILTER */
+.filter-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.filter-box select {
+  padding: 14px 18px;
+  border-radius: 18px;
+  border: 1px solid #ffd2e2;
+  background: #fff4f7;
+  font-size: 15px;
+  transition: .25s;
+}
+
+.filter-box select:focus {
+  border-color: #ff8fb8;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(255,143,184,0.25);
+}
+
+/* SERVICE CARD LIST */
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* CARD */
+.service-card {
+  background-color: #f1c2c2;
+  border: 1px solid rgba(255,150,180,0.25);
+  backdrop-filter: blur(14px);
+  padding: 28px;
+  border-radius: 24px;
+  box-shadow: 0 10px 24px rgba(255,110,150,0.20);
+}
+
+.service-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #c01760;
+  margin-bottom: 10px;
+}
+
+.service-category {
+  color: #8b4761;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.service-desc {
+  color: #5b2c3f;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+/* BUTTON */
+.map-btn {
+  padding: 12px 18px;
+  border: none;
+  background-color: #DB7070;
+  background-color: beige;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(255,110,150,0.28);
+  transition: .3s;
+}
+
+.map-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(255,110,150,0.35);
+}

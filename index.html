@@ -1,0 +1,217 @@
+<!DOCTYPE html>s
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Femora</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        .hidden { display: none; }
+        .page { padding: 40px; max-width: 900px; margin: auto; }
+        .hak-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .hak-card {
+            background: white;
+            padding: 18px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .use-feature-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 18px;
+            background-color: #4c75f2;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+        .use-feature-btn:hover {
+            background-color: #345bd1;
+        }
+
+        .feature-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+<nav class="navbar">
+    <h2 class="logo">Femora</h2>
+
+    <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+    </ul>
+
+    <button class="voices-btn">Voices</button>
+</nav>
+
+<!-- ================= HALAMAN UTAMA ================= -->
+<div id="mainPage">
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-left">
+            <h1 class="hero-title">Femora</h1>
+            <h2 class="hero-subtitle">suaramu kekuatanmu!</h2>
+
+            <p class="hero-desc">
+                Platform untuk membantu perempuan desa menyampaikan suara
+                dengan aman dan efektif.
+            </p>
+
+            <button class="hero-btn" id="getStartedBtn">Get Started</button>
+        </div>
+
+        <div class="hero-bg-circle"></div>
+    </section>
+
+    <!-- ABOUT -->
+<section id="about" class="about-section">
+    <h2 class="about-title">About</h2>
+
+    <p class="about-desc">
+        Femora adalah platform yang mempermudah perempuan desa dalam menyampaikan aspirasi
+        dan kebutuhan dengan aman dan mudah digunakan.
+    </p>
+
+    <p class="about-desc">
+        Dengan teknologi dan komunitas, Femora menjadi jembatan antara suara perempuan
+        dan pihak yang dapat membantu.
+    </p>
+</section>
+
+        <!-- FEATURES -->
+        <section id="features" class="features-section">
+            <h2 class="features-title">Features</h2>
+
+            <div class="features-container">
+
+                <!-- FEATURE 1: Hak Kita -->
+                <div class="feature-card">
+                    <button class="feature-header">
+                        <span>Hak Kita</span>
+                        <span class="arrow">+</span>
+                    </button>
+
+                    <div class="feature-content">
+                        <p>Edukasi hak perempuan & akses layanan pemerintah dalam bahasa sederhana.</p>
+                        <a href="hakkita.html" class="use-feature-btn">Use Feature</a>
+                    </div>
+                </div>
+
+                <!-- FEATURE 2 -->
+                <div class="feature-card">
+                    <button class="feature-header">
+                        <span>VoiceGuide</span>
+                        <span class="arrow">+</span>
+                    </button>
+                    <div class="feature-content">
+                        <p>Belajar modul dan menjawab pilihan hanya dengan suara, tanpa cerita pribadi.</p>
+                        <a href="voiceguide.html" class="use-feature-btn">Use Feature</a>
+                    </div>
+                </div>
+
+                <!-- FEATURE 3 -->
+                <div class="feature-card">
+                    <button class="feature-header">
+                        <span>InsightBox</span>
+                        <span class="arrow">+</span>
+                    </button>
+                    <div class="feature-content">
+                        <p>Survey aman tanpa identitas untuk memahami kondisi desa.</p>
+                        <a href="insightbox.html" class="use-feature-btn">Use Feature</a>
+                    </div>
+                </div>
+
+                <!-- FEATURE 4 -->
+                <div class="feature-card">
+                    <button class="feature-header">
+                        <span>GovConnect</span>
+                        <span class="arrow">+</span>
+                    </button>
+                    <div class="feature-content">
+                        <p>Menampilkan lokasi dan fungsi layanan publik di desa.</p>
+                        <a href="govconnect.html" class="use-feature-btn">Use Feature</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- SCRIPT FIX COLLAPSIBLE -->
+    <script>
+        const headers = document.querySelectorAll(".feature-header");
+
+        headers.forEach(header => {
+            header.addEventListener("click", (e) => {
+
+                const content = header.nextElementSibling;
+                const arrow = header.querySelector(".arrow");
+
+                // kalau sedang terbuka → tutup
+                if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+                    content.style.maxHeight = "0px";
+                    arrow.textContent = "+";
+                    return;
+                }
+
+                // tutup semua lain dulu
+                document.querySelectorAll(".feature-content").forEach(c => {
+                    c.style.maxHeight = "0px";
+                });
+                document.querySelectorAll(".arrow").forEach(a => {
+                    a.textContent = "+";
+                });
+
+                // buka yang diklik
+                content.style.maxHeight = content.scrollHeight + "px";
+                arrow.textContent = "−";
+            });
+        });
+    </script>
+    <script>
+    // SCROLL Get Started → About
+    document.getElementById("getStartedBtn").addEventListener("click", () => {
+        document.getElementById("about").scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+</script>
+<script>
+document.querySelector(".voices-btn").addEventListener("click", () => {
+    window.location.href = "voiceguide.html";
+});
+</script>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="footer-content">
+        <h3 class="footer-title">Femora</h3>
+
+        <div class="footer-contact">
+            <p><strong>Email:</strong> tirtadjaja.eugenia@gmail.com</p>
+            <p><strong>Phone:</strong> +62 811 8678 108</p>
+        </div>
+
+        <p class="footer-copy">© 2025 Femora. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

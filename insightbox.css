@@ -1,0 +1,149 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* BODY */
+body {
+  body {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 240, 245, 0.8) 0%,
+    #ffffff 25%,
+    #ffffff 75%,
+    rgba(255, 240, 245, 0.8) 100%
+  );
+}
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 750px;
+  padding: 0 20px 60px;
+}
+
+.insight-title {
+  font-size: 54px;
+  font-weight: 800;
+  color: #c01760;
+  text-align: left;
+  line-height: 1.1;
+  margin-top: 6px;  
+  margin-bottom: 60px;
+  position: relative;
+  padding-left: 22px;
+  font-family: "Orelega One", serif;
+}
+
+/* SUBTITLE */
+.subtitle {
+  text-align: left;
+  font-size: 20px;
+  color: #5b2c3f;
+  margin-top: -4px;
+  margin-bottom: 35px;
+  max-width: 550px;
+  font-family: "DM Serif Text", serif;
+}
+
+/* SURVEY CARD STYLE */
+#surveyForm {
+  background-color: #fcc4c4;
+  border: 1px solid rgba(255, 150, 180, 0.25);
+  backdrop-filter: blur(14px);
+  padding: 38px 32px;
+  border-radius: 10px;
+  box-shadow: 0 10px 28px rgba(255, 110, 145, 0.2);
+  margin-bottom: 40px;
+}
+
+/* LABEL */
+label {
+  font-weight: 600;
+  color: #5b2c3f;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* SELECT */
+select {
+  width: 100%;
+  padding: 14px;
+  background: #fff4f7;
+  border-radius: 18px;
+  border: 1px solid #ffd2e2;
+  margin-bottom: 28px;
+  font-size: 15.5px;
+  transition: 0.25s ease;
+}
+
+select:focus {
+  outline: none;
+  border-color: #ff8fb8;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(255, 143, 184, 0.25);
+}
+
+/* SUBMIT BUTTON */
+.btn-submit {
+  width: 100%;
+  padding: 16px;
+  background-color: #DB7070;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 6px 18px rgba(255, 110, 150, 0.28);
+  transition: 0.3s ease;
+
+}
+
+.btn-submit:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(255, 110, 150, 0.35);
+}
+
+/* THANK YOU MESSAGE */
+.thankyou h2 {
+  font-size: 28px;
+  color: #c01760;
+  font-weight: 700;
+  text-align: center;
+  font-family: "DM Serif Text", serif;
+}
+
+.thankyou p {
+  font-size: 17px;
+  color: #5b2c3f;
+  text-align: center;
+  margin-top: 6px;
+  font-family: "DM Serif Text", serif;
+}
+
+.hidden {
+  display: none;
+}
+
+/* CHART SECTION */
+.chart-section h2 {
+  font-size: 26px;
+  color: #c01760;
+  text-align: center;
+  margin-bottom: 22px;
+  font-family: "DM Serif Text", serif;
+}
+
+canvas {
+  width: 100% !important;
+  max-height: 320px;
+}

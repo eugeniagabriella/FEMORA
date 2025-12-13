@@ -1,0 +1,98 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  background: #ffffff;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 850px;
+  padding: 0 25px 70px;
+}
+
+/* TITLES */
+.title {
+  font-size: 54px;
+  font-weight: 800;
+  color: #c6296b;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 20px;
+  color: #5b2c3f;
+  margin-top: 20px;
+  margin-bottom: 45px;
+  font-family: "DM Serif Text", serif;
+}
+
+/* MIC BUTTON */
+.mic-box {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.mic-btn {
+  padding: 20px 40px;
+  background: linear-gradient(135deg, #EE6C8F, #FF7F9F);
+  border: none;
+  color: white;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(255,110,150,0.32);
+  transition: 0.3s;
+}
+
+.mic-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* STATUS */
+.status {
+  margin-top: 12px;
+  color: #8b4761;
+  font-size: 16px;
+}
+
+/* CARDS */
+.result-card, .analysis-card {
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,150,180,0.25);
+  padding: 30px;
+  border-radius: 24px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 24px rgba(255,110,150,0.20);
+}
+
+.hidden {
+  display: none;
+}
+
+.result-card h3, .analysis-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #c01760;
+  margin-bottom: 10px;
+  font-family: "DM Serif Text", serif;
+}
+
+.result-card p, .analysis-card p {
+  font-size: 16px;
+  color: #5b2c3f;
+  line-height: 1.5;
+  font-family: "DM Serif Text", serif;
+}

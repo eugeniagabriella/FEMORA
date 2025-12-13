@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GovConnect – Layanan Publik Desa</title>
+  <link rel="stylesheet" href="govconnect.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="wrapper">
+  <h1 class="title">GovConnect</h1>
+  <p class="subtitle">Temukan lokasi & layanan publik penting di desamu.</p>
+
+  <!-- FILTER -->
+  <div class="filter-box">
+    <select id="categoryFilter">
+      <option value="all">Semua Kategori</option>
+      <option value="kesehatan">Kesehatan</option>
+      <option value="pendidikan">Pendidikan</option>
+      <option value="keamanan">Keamanan</option>
+      <option value="sosial">Layanan Sosial</option>
+    </select>
+  </div>
+
+  <!-- LIST LAYANAN -->
+  <div id="serviceList" class="service-list"></div>
+</div>
+
+<script src="govconnect.js"></script>
+</body>
+</html>

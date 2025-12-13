@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>InsightBox – Survey Aman</title>
+  <link rel="stylesheet" href="insightbox.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+ <h2 class="insight-title">Insight Box</h2>
+  <p class="subtitle">Survey aman tanpa identitas untuk memahami kondisi perempuan di desa.</p>
+
+  <form id="surveyForm">
+
+    <label>Apa hambatan terbesar yang kamu hadapi?</label>
+    <select id="hambatan" required>
+      <option value="">-- Pilih salah satu --</option>
+      <option value="Akses Pendidikan">Akses Pendidikan</option>
+      <option value="Akses Internet">Akses Internet</option>
+      <option value="Keterbatasan Ekonomi">Keterbatasan Ekonomi</option>
+      <option value="Keterbatasan Mobilitas">Keterbatasan Mobilitas</option>
+      <option value="Keamanan">Keamanan</option>
+    </select>
+
+    <label>Seberapa aman kamu merasa di lingkungan sekitar?</label>
+    <select id="keamanan" required>
+      <option value="">-- Pilih --</option>
+      <option value="Aman">Aman</option>
+      <option value="Cukup Aman">Cukup Aman</option>
+      <option value="Kurang Aman">Kurang Aman</option>
+      <option value="Tidak Aman">Tidak Aman</option>
+    </select>
+
+    <label>Apakah kamu memiliki akses ke layanan pemerintah?</label>
+    <select id="akses" required>
+      <option value="">-- Pilih --</option>
+      <option value="Ya">Ya</option>
+      <option value="Tidak">Tidak</option>
+      <option value="Tidak Tahu">Tidak Tahu</option>
+    </select>
+
+    <button type="submit" class="btn-submit">Kirim Survey</button>
+  </form>
+
+  <!-- THANK YOU (HIDE FIRST) -->
+  <div class="thankyou hidden" id="thankYouBox" style="margin-top: 40px;">
+    <h2>Terima kasih!</h2>
+    <p>Jawaban kamu tersimpan secara anonim.</p>
+  </div>
+
+  <!-- CHART SECTION (HIDE FIRST) -->
+  <div class="chart-section hidden" id="chartSection" style="margin-top: 25px;">
+    <h2>Hasil Survei</h2>
+    <canvas id="resultChart"></canvas>
+  </div>
+
+</div>
+
+<script src="insightbox.js"></script>
+</body>
+</html>

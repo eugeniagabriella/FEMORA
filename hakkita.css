@@ -1,0 +1,99 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:"Playfair Display", serif;
+}
+
+body {
+  background: #ffffff;
+  padding-top: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 850px;
+  padding: 0 25px 80px;
+}
+
+/* TITLE */
+.title {
+  font-size: 54px;
+  font-weight: 800;
+  color: #c6296b;
+  text-align: left;
+  margin-bottom: 6px;
+  font-family:"Playfair Display", serif;
+}
+
+.subtitle {
+  text-align: left;
+  font-size: 20px;
+  color: #5b2c3f;
+  margin-bottom: 45px;
+  font-family: "DM Serif Text", serif;
+}
+
+/* TOPIC LIST */
+.topic-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* CARD */
+.topic-card {
+  background-color: #f1c2c2;
+  border: 1px solid rgba(255,150,180,0.25);
+  backdrop-filter: blur(14px);
+  padding: 28px;
+  border-radius: 24px;
+  box-shadow: 0 10px 24px rgba(255,110,150,0.20);
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.topic-card:hover {
+  transform: translateY(-2px);
+}
+
+/* CARD TITLE */
+.topic-title {
+  font-size: 22px;
+  font-weight: 300;
+  color: #000000;
+  margin-bottom: 10px;
+  font-family: "DM Serif Text", serif;
+}
+
+/* DESC (HIDDEN BEFORE CLICK) */
+.topic-desc {
+  color: #5b2c3f;
+  font-size: 15px;
+  margin-top: 16px;
+  line-height: 1.6;
+  display: none;
+}
+
+/* BUTTON */
+.learn-btn {
+  margin-top: 16px;
+  padding: 12px 18px;
+  border: none;
+  background-color: beige;
+  color: black;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(255,110,150,0.28);
+  transition: .3s;
+}
+
+.learn-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(255,110,150,0.35);
+}
