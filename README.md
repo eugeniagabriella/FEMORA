@@ -87,7 +87,3 @@ This project was developed as a **solo project**, responsible for end-to-end dev
 ## Purpose
 
 Femora is designed as a step toward a more inclusive digital environment where rural teenage girls can access important information in a way that is clear, friendly, and empowering.
-
-## Note
-
-This project originated from a hackathon initiative focused on improving access to information for rural women, and has been structured as a functional web platform prototype.
