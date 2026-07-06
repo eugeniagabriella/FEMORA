@@ -2,7 +2,7 @@
 
 A web-based empowerment platform designed to make information about women’s rights and public services more accessible, especially for teenage girls in rural areas.
 
-**Project Period:** Dec 2025
+**Project Period:** Nov 2025 - Dec 2025
 
 ---
 
