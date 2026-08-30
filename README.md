@@ -9,6 +9,9 @@ A web-based empowerment platform designed to make information about women's righ
 ---
 
 ## Overview
+![FEMORA Preview 1](FEMORA1.png)
+
+![FEMORA Preview 2](FEMORA2.png)
 
 **FEMORA** simplifies complex information about rights, education, healthcare, and government services into content that is easy to understand, visually accessible, and beginner-friendly.
 
