@@ -1,16 +1,18 @@
 # FEMORA
 
-A web-based empowerment platform designed to make information about women’s rights and public services more accessible, especially for teenage girls in rural areas.
+A web-based empowerment platform designed to make information about women's rights and public services more accessible, especially for teenage girls in rural areas.
 
-**Project Period:** Nov 2025 - Dec 2025
+**Project Period:** November 2025 – December 2025
+
+**Achievement:** 3rd Place — Digital Empowerment Hackathon for Rural Communities
 
 ---
 
 ## Overview
 
-**Femora** is built to simplify complex information about rights, education, healthcare, and government services into a form that is easy to understand, visually friendly, and accessible for users with low digital literacy.
+**FEMORA** simplifies complex information about rights, education, healthcare, and government services into content that is easy to understand, visually accessible, and beginner-friendly.
 
-The platform focuses on bridging the information gap that often exists in rural communities, where access to clear and reliable information is still limited.
+The platform aims to address information gaps in rural communities by providing clear and centralized access to relevant resources.
 
 ---
 
@@ -18,74 +20,90 @@ The platform focuses on bridging the information gap that often exists in rural 
 
 Many teenage girls in rural areas face challenges such as:
 
-- Lack of understanding about basic rights (education, health, safety, social protection)
-- Government information that is too technical and difficult to understand
-- Limited access to reliable and centralized information sources
-- Low digital literacy, making it hard to navigate online resources
+* Limited understanding of basic rights related to education, healthcare, safety, and social protection
+* Government information that can be technical or difficult to understand
+* Limited access to reliable and centralized information
+* Difficulty navigating digital resources due to varying levels of digital literacy
 
-These issues create an information gap that affects confidence and decision-making in important life matters.
+These challenges can create information gaps that affect confidence and decision-making in important areas of life.
 
 ---
 
 ## Solution
 
-Femora provides a simple and accessible digital platform that transforms complex information into clear, structured, and visual content.
+FEMORA transforms complex information into clear, structured, and accessible digital content.
 
-The platform is designed to be:
-- Easy to understand
-- Visually engaging
-- Friendly for beginners
-- Accessible for users with different literacy levels
+The platform focuses on:
+
+* Simple and easy-to-understand information
+* Clear visual presentation
+* Beginner-friendly navigation
+* Accessibility for users with different levels of digital literacy
 
 ---
 
 ## Features
 
-### Hakkita – Women’s Rights Education
-Simplified explanations of fundamental rights such as education, healthcare, safety, and social assistance, presented in interactive card-based UI.
+### Hakkita – Women's Rights Education
+
+Provides simplified explanations of fundamental rights related to education, healthcare, safety, and social assistance through an interactive card-based interface.
 
 ### GovConnect – Public Services Guide
-Helps users understand and access essential government services such as:
-- Education assistance programs (KIP)
-- Health services (BPJS)
-- Reporting channels for safety and violence cases
+
+Helps users understand and access essential public services, including:
+
+* Education assistance programs such as KIP
+* Health services such as BPJS
+* Reporting channels for safety and violence cases
 
 ### VoiceGuide
-A text-to-speech feature that reads content aloud, supporting users with reading difficulties or low literacy.
+
+A text-to-speech feature that reads content aloud to support users who may have difficulty reading.
 
 ### Insight Box
-A feedback and survey system that collects user input and insights for continuous improvement.
+
+A feedback and survey system that collects user input to support future improvements.
 
 ### UI/UX Design
-- Soft, friendly visual style
-- Simple navigation flow
-- Beginner-friendly language
-- Research-based design approach
+
+* Friendly visual design
+* Simple navigation flow
+* Beginner-friendly language
+* Research-informed design approach
 
 ---
 
 ## Tech Stack
 
-- HTML
-- CSS
-- JavaScript
-- Figma (UI/UX Design)
-- Web Speech API
+* HTML
+* CSS
+* JavaScript
+* Figma
+* Web Speech API
 
 ---
 
 ## My Role
 
-This project was developed as a **solo project**, responsible for end-to-end development including:
+FEMORA was developed as a **solo project**, with responsibility for the complete development process, including:
 
-- UI/UX design and user flow planning
-- Frontend development using HTML, CSS, and JavaScript
-- Implementation of interactive features such as VoiceGuide
-- Structuring and simplifying complex information into user-friendly content
-- Testing and iteration based on usability considerations
+* Conducting user research and identifying user needs
+* Designing the UI/UX and user flows
+* Developing the frontend using HTML, CSS, and JavaScript
+* Implementing interactive features such as VoiceGuide
+* Structuring complex information into accessible content
+* Testing and iterating based on usability considerations
+
+---
+
+## Competition
+
+FEMORA was developed for the **Digital Empowerment Hackathon for Rural Communities**, where the project achieved **3rd Place**.
+
+The project translated research insights into a functional digital solution focused on improving access to information for rural teenage girls.
 
 ---
 
 ## Purpose
 
-Femora is designed as a step toward a more inclusive digital environment where rural teenage girls can access important information in a way that is clear, friendly, and empowering.
+FEMORA explores how accessible digital design can help bridge information gaps and make essential resources easier to understand and access for underserved communities.
