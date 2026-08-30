@@ -2,6 +2,8 @@
 
 A web-based empowerment platform designed to make information about women's rights and public services more accessible, especially for teenage girls in rural areas.
 
+**Project Type:** Solo Project  
+
 **Project Period:** November 2025 – December 2025
 
 **Achievement:** 3rd Place — Digital Empowerment Hackathon for Rural Communities
@@ -88,7 +90,7 @@ A feedback and survey system that collects user input to support future improvem
 
 ## My Role
 
-FEMORA was developed as a **solo project**, with responsibility for the complete development process, including:
+Responsible for the complete development process, including:
 
 * Conducting user research and identifying user needs
 * Designing the UI/UX and user flows
